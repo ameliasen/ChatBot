@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+   background: linear-gradient(135deg, #000000 0%, #2f0351 50%, #0c0c0c 100%);
+   width:100%;
+   height:100%;
+}
+
+
+h1{
+font-family: 'Poppins', sans-serif;
+font-size:60px;
+color:white;
+position: fixed;       
+  left: 20px;           
+  top: 20%;              
+  transform: translateY(-50%); 
+}
+
+.contact-icon1{
+  position:fixed;
+   top:200px;
+   right:10px;
+   margin-left:500px;
+   display:inline-block;
+   width:100px;
+   height:100px;
+   border-radius:50%;
+   overflow:hidden;
+   margin:10px;
+   box-shadow: 2px 2px 10px black;
+   cursor: pointer;
+   animation: slide-in 5s forwards;
+   
+ }
+ 
+ .contact-icon1 img{
+   width:100%;
+   height:100%;
+   object-fit:cover;
+ }
+ .contact-icon2{
+   position:fixed;
+    top:350px;
+    right:10px;
+    margin-left:500px;
+    display:inline-block;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:10px;
+    box-shadow: 2px 2px 10px black;
+   cursor: pointer;
+   animation: slide-in 5s forwards;
+ 
+  }
+ .contact-icon2 img{
+   width:100%;
+   height:100%;
+   object-fit:cover;
+ }
+ .contact-icon3{
+   position:fixed;
+    top:500px;
+    right:10px;
+    margin-left:500px;
+    display:inline-block;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    overflow:hidden;
+    margin:10px;
+    box-shadow: 2px 2px 10px black;
+   cursor: pointer;
+   animation: slide-in 5s forwards;
+   
+  }
+ .contact-icon3 img{
+   width:100%;
+   height:100%;
+   object-fit:cover;
+ }
+
+
+ 
+ .contact-icon4{
+  position:fixed;
+   top:500px;
+   right:10px;
+   margin-left:500px;
+   display:inline-block;
+   width:100px;
+   height:100px;
+   border-radius:50%;
+   overflow:hidden;
+   margin:10px;
+   box-shadow: 2px 2px 10px black;
+  cursor: pointer;
+  animation: slide-in 3s forwards;
+  
+ }
+.contact-icon4 img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+/* Keyframes for smooth sliding effect */
+@keyframes slide-in {
+  from {
+      right: -100px;
+      opacity: 0;
+  }
+  to {
+      right: 20px;
+      opacity: 1;
+  }
+}
+.chatbot-intro-container {
+  position: fixed;       
+  left: 15px;           
+  top: 40%;              
+  transform: translateY(-50%); 
+   
+  padding: 30px;         
+  border-radius: 10px;   
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+  font-size: 35px;
+  color: #fff;         
+  text-align: center;
+  width: 500px;          
+}
+
+#dynamic-intro {
+  opacity: 0;            
+  animation: fade-in-out 6s infinite; 
+}
+
+/* Keyframes for the fade effect */
+@keyframes fade-in-out {
+  0% { opacity: 0; }         
+  10% { opacity: 1; }        
+  90% { opacity: 1; }     
+  100% { opacity: 0; }       
+}
+
+
+
+
+
+/* Chat container */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+  height: 900px;
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+
+
+.glass-effect {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2); 
+  border-radius: 10px; 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  padding: 10px;
+  margin-top: 20px; 
+  width: 100%; 
+}
+
+/* Chatbot image */
+.chatbot-image {
+  width: 100%;
+  height: 120%;
+
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+
+
+
+
+/* Telegram icon */
+.fa-telegram {
+  font-size: 37px; 
+  color: #ffffff; 
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.fa-telegram:hover {
+  color: #005f99; 
+}
+
+
+
+.chat-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.chat-input {
+  width: 800px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  color: #202020;
+  outline: none;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+/* Paperclip Icon */
+#paperclip-icon {
+  font-size: 24px;
+  margin-left:10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Navigation Links - Hidden initially */
+.nav-links {
+  list-style: none;
+  cursor:pointer;
+  display: none; 
+  position: absolute;
+  top: 600px;
+  right: -180px; 
+  width: 130px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease; 
+}
+
+.nav-links li {
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+}
+
+/* Show the nav-links when active */
+.nav-links.show {
+  display: block;
+  right: 20px; 
+}
